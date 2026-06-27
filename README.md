@@ -1,66 +1,75 @@
 # 🔐 Password Strength Analyzer
 
-A simple and interactive **Password Strength Analyzer** built with **Python** and **Streamlit**. The application evaluates password strength using security best practices, estimates entropy, provides crack-time estimation, and offers personalized suggestions to create stronger passwords.
+A simple and interactive **Password Strength Analyzer** built with **Python** and **Streamlit**. This application helps users evaluate the strength of their passwords by checking common security requirements, estimating password entropy, predicting crack time, and providing personalized suggestions to improve password security.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-* Password strength analysis
-* Entropy calculation
-* Crack time estimation
-* Security checklist
-* Password strength progress bar
-* Strong password generator
-* Personalized improvement suggestions
-* Simple and responsive Streamlit interface
+* 🔍 Analyze password strength instantly
+* 📏 Check password length
+* 🔠 Detect uppercase and lowercase letters
+* 🔢 Detect numbers
+* 🔣 Detect special characters
+* 📊 Display password strength with a progress bar
+* 🧮 Calculate password entropy
+* ⏳ Estimate password crack time
+* 🔐 Generate a strong random password
+* 💡 Show personalized suggestions for weak passwords
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Built With
 
 * Python 3
 * Streamlit
-* Regular Expressions (re)
+* Regular Expressions (`re`)
 * Math
 * Random
 * String
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
 PasswordStrength/
-│── PasswordStrengthAnalyzer.py
-│── requirements.txt
-│── README.md
-│── .gitignore
+│
+├── screenshots/
+│   ├── screenshot1.png
+│   ├── screenshot2.png
+│   ├── screenshot3.png
+│   └── screenshot4.png
+│
+├── PasswordStrengthAnalyzer.py
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
 
 ## ⚙️ Installation
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/asipali/password_strength_analyzer.git
 ```
 
-### Navigate to the project folder
+### 2. Navigate to the project directory
 
 ```bash
 cd password_strength_analyzer
 ```
 
-### Install dependencies
+### 3. Install the required packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the application
+### 4. Run the application
 
 ```bash
 streamlit run PasswordStrengthAnalyzer.py
@@ -70,51 +79,53 @@ streamlit run PasswordStrengthAnalyzer.py
 
 ## 🔍 How It Works
 
-The application checks whether the password contains:
+The application evaluates a password using the following security checks:
 
-* Minimum length (8+ characters)
-* Uppercase letters
-* Lowercase letters
-* Numbers
-* Special characters
+* Minimum length of 8 characters
+* At least one uppercase letter
+* At least one lowercase letter
+* At least one number
+* At least one special character
 
-It then calculates:
+Based on these checks, it:
 
-* Password entropy
-* Overall strength
-* Estimated crack time
-
-Finally, it provides:
-
-* Security recommendations
-* Password improvement suggestions
-* A randomly generated strong password
+* Calculates the password entropy
+* Classifies the password as Weak, Medium, Strong, or Excellent
+* Estimates how difficult the password is to crack
+* Suggests improvements for weak passwords
+* Generates a secure random password on demand
 
 ---
 
 ## 📸 Screenshots
 
-Add screenshots of your application here.
+### Home Screen
 
-Example:
+![Home Screen](screenshots/screenshot1.png)
 
-```
-screenshots/
-├── home.png
-├── analysis.png
-```
+### Weak Password Analysis
+
+![Weak Password](screenshots/screenshot2.png)
+
+### Medium Password Analysis
+
+![Medium Password](screenshots/screenshot3.png)
+
+### Strong Password Analysis
+
+![Strong Password](screenshots/screenshot4.png)
 
 ---
 
-## 🎯 Future Improvements
+## 🚀 Future Improvements
 
 * Show/Hide password option
-* Password breach detection (Have I Been Pwned API)
+* Password breach detection using the Have I Been Pwned API
 * Common password blacklist
-* zxcvbn-based password scoring
+* Password copy-to-clipboard button
 * Password history check
-* Copy generated password button
 * Password strength visualization charts
+* Advanced password scoring using zxcvbn
 
 ---
 
