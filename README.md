@@ -1,55 +1,57 @@
 # 🔐 Password Strength Analyzer
 
-A simple and interactive **Password Strength Analyzer** built with **Python** and **Streamlit**. The application evaluates password strength based on common security rules, estimates password entropy, provides an approximate crack-time assessment, and generates a strong recommended password.
+A simple and interactive **Password Strength Analyzer** built with **Python** and **Streamlit**. The application evaluates password strength using security best practices, estimates entropy, provides crack-time estimation, and offers personalized suggestions to create stronger passwords.
+
+---
 
 ## 🚀 Features
 
-* Analyze password strength in real time
-* Check for:
-
-  * Minimum password length
-  * Uppercase letters
-  * Lowercase letters
-  * Numbers
-  * Special characters
-* Password entropy calculation
-* Password strength progress bar
+* Password strength analysis
+* Entropy calculation
 * Crack time estimation
-* Secure random password generator
-* Password security tips
+* Security checklist
+* Password strength progress bar
+* Strong password generator
+* Personalized improvement suggestions
+* Simple and responsive Streamlit interface
+
+---
 
 ## 🛠️ Technologies Used
 
-* Python 3.x
+* Python 3
 * Streamlit
-* Regular Expressions (`re`)
+* Regular Expressions (re)
 * Math
 * Random
 * String
 
+---
+
 ## 📂 Project Structure
 
+```text
+PasswordStrength/
+│── PasswordStrengthAnalyzer.py
+│── requirements.txt
+│── README.md
+│── .gitignore
 ```
-Password-Strength-Analyzer/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
+
+---
 
 ## ⚙️ Installation
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Password-Strength-Analyzer.git
+git clone https://github.com/asipali/password_strength_analyzer.git
 ```
 
-### Navigate to the project
+### Navigate to the project folder
 
 ```bash
-cd Password-Strength-Analyzer
+cd password_strength_analyzer
 ```
 
 ### Install dependencies
@@ -61,35 +63,63 @@ pip install -r requirements.txt
 ### Run the application
 
 ```bash
-streamlit run app.py
+streamlit run PasswordStrengthAnalyzer.py
 ```
 
-## 📊 Password Evaluation Criteria
+---
 
-| Check             | Requirement                   |
-| ----------------- | ----------------------------- |
-| Length            | At least 8 characters         |
-| Uppercase         | At least one uppercase letter |
-| Lowercase         | At least one lowercase letter |
-| Number            | At least one digit            |
-| Special Character | At least one special symbol   |
+## 🔍 How It Works
 
-## 🔐 Security Features
+The application checks whether the password contains:
 
-* Password entropy estimation
-* Strength classification (Weak / Medium / Strong)
-* Crack-time estimation
-* Secure password recommendation
-* Password creation best practices
+* Minimum length (8+ characters)
+* Uppercase letters
+* Lowercase letters
+* Numbers
+* Special characters
 
-## 📸 Screenshot
+It then calculates:
 
-*Add a screenshot of the application here.*
+* Password entropy
+* Overall strength
+* Estimated crack time
 
-## 🤝 Contributing
+Finally, it provides:
 
-Contributions are welcome. Feel free to fork the repository, create a feature branch, and submit a pull request.
+* Security recommendations
+* Password improvement suggestions
+* A randomly generated strong password
 
-## 📄 License
+---
 
-This project is open-source and available under the MIT License.
+## 📸 Screenshots
+
+Add screenshots of your application here.
+
+Example:
+
+```
+screenshots/
+├── home.png
+├── analysis.png
+```
+
+---
+
+## 🎯 Future Improvements
+
+* Show/Hide password option
+* Password breach detection (Have I Been Pwned API)
+* Common password blacklist
+* zxcvbn-based password scoring
+* Password history check
+* Copy generated password button
+* Password strength visualization charts
+
+---
+
+## 👨‍💻 Author
+
+**Asip Ali**
+
+GitHub: https://github.com/asipali
